@@ -5,6 +5,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('images/background.png'); /* Updated to use background.png */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Ensure text is readable on the background */
 }
 
 h1 {
@@ -21,20 +26,24 @@ h1 {
     width: 80%;
     margin-bottom: 20px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 #weather-section {
+    width: 60%; /* Reduce the width */
     margin-top: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.7); /* Make the background darker */
     border-radius: 8px;
 }
 
 #weather {
-    width: 80%;
+    width: 100%; /* Adjust width to fit the section */
     text-align: center;
     font-size: 1.2em;
-    color: #333;
-    height: 400px;
+    color: #fff;
+    height: 300px; /* Reduce the height */
     overflow-y: auto;
 }
